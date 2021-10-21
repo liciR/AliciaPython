@@ -1,6 +1,6 @@
 print(' ------------------------------------------------ ')
 print('|                                                |')
-print('|    03HelloWorld                                |')
+print('|    03GoodbyePerson                             |')
 print('|    Name : Alicia R                             |')
 print('|    Version : 01                                |')
 print('|                                                |')
@@ -8,3 +8,4 @@ print(' ------------------------------------------------ ')
 print('Hello')
 x = input('What is your name ? ')
 print('Goodbye ' + x)
+
