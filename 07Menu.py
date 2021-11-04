@@ -50,6 +50,12 @@ def main_menu():
             end()
             clearConsole()
             main_menu() 
+        elif enter_op == "7":
+            start()
+            string_loop()
+            end()
+            clearConsole()
+            main_menu() 
         else:
             start()
             print("invalid option")
@@ -121,6 +127,11 @@ def while_loop():
         print(" Congratulations!!")
         print("")
         print("")
+
+def string_loop():
+    string = input("What is your string? ")
+    for a in string:
+        print(a)
 
 clearConsole()
 main_menu()
