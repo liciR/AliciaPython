@@ -70,15 +70,15 @@ def main_menu():
 
 def menu_list():
     print("""1. Hello World
-    2. Goodbye World
-    3. Goodbye Person
-    4. Good Teacher
-    5. forLoop
-    6. whileLoop
-    7. string Loop
-    8. Convert to ascii
-    9. Encode a string
-    x. To Exit""")
+2. Goodbye World
+3. Goodbye Person
+4. Good Teacher
+5. forLoop
+6. whileLoop
+7. string Loop
+8. Convert to ascii
+9. Encode a string
+x. To Exit""")
 
 def start():
     print("")
@@ -93,11 +93,8 @@ def end():
     print("")
     input("Press Enter to continue")
 
-# def ent_cont():
-#     input("Press Enter to continue")
-
 def hello_world():
-    print("\nHello World\n")
+    print("Hello World")
 
 def goodbye_world():
     print("Hello World")
@@ -130,7 +127,6 @@ def while_loop():
         print("")
         print("")
         print(" Congratulations!!")
-        print("")
         print("")
         print("")
 
