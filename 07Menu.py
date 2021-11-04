@@ -1,3 +1,6 @@
+import os
+clearConsole = lambda : os.system("cls")
+
 print(" ------------------------------------------------")
 print("|                                                |")
 print("|    07Menu                                      |")
@@ -6,7 +9,7 @@ print("|    Version : 01                                |")
 print("|                                                |")
 print(" ------------------------------------------------")
 
-def menu():
+def menu_list():
     print("""
 1. Hello World
 2. Goodbye World
@@ -30,6 +33,9 @@ def end():
     print("")
     print("")
     print("")
+
+def ent_cont():
+    input("Press Enter to continue")
 
 def hello_world():
     print("\nHello World\n")
@@ -69,49 +75,77 @@ def while_loop():
         print("")
         print("")
 
-menu()
+def main_menu():
+    print(" ------------------------------------------------")
+    print("|                                                |")
+    print("|    07Menu                                      |")
+    print("|    Name : Alicia Rodrigues                     |")
+    print("|    Version : 01                                |")
+    print("|                                                |")
+    print(" ------------------------------------------------")
+    print("")
+    menu_list()
+    enter_op = input("Enter an option ")
 
-enter_op = input("Enter an option ")
-if enter_op == "1":
+    while enter_op != "x":
+        if enter_op == "1":
+            start()
+            hello_world()
+            end()
+            ent_cont()
+            clearConsole()
+            main_menu()
+        elif enter_op == "2":
+            start()
+            goodbye_world()
+            end()
+            ent_cont()
+            clearConsole()
+            main_menu()          
+        elif enter_op == "3":
+            start()
+            goodbye_person()
+            end()
+            ent_cont()
+            clearConsole()
+            main_menu() 
+        elif enter_op == "4":
+            start()
+            goodbye_teacher()
+            end()
+            ent_cont()
+            clearConsole()
+            main_menu() 
+        elif enter_op == "5":
+            start()
+            for_loop()
+            end()
+            ent_cont()
+            clearConsole()
+            main_menu() 
+        elif enter_op == "6":
+            start()
+            while_loop()
+            end()
+            ent_cont()
+            clearConsole()
+            main_menu() 
+        else:
+            start()
+            print("invalid option")
+            end()
+            ent_cont()
+            clearConsole()
+            main_menu()
     start()
-    hello_world()
     end()
+    ent_cont()
+    quit()
 
-if enter_op == "2":
-    start()
-    goodbye_world()
-    end()
+clearConsole()
+main_menu()
 
-if enter_op == "3":
-    start()
-    goodbye_person()
-    end()
 
-if enter_op == "4":
-    start()
-    goodbye_teacher()
-    end()
-
-if enter_op == "5":
-    start()
-    for_loop()
-    end()
-
-if enter_op == "6":
-    start()
-    while_loop()
-    end()
-
-if enter_op == "x":
-    start()
-    end()
-
-else:
-    start()
-    print("invalid option")
-    end()
-
-input("Press Enter to continue")
 
 
 
