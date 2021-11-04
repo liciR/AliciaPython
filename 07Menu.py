@@ -1,26 +1,84 @@
 import os
 clearConsole = lambda : os.system("cls")
 
-print(" ------------------------------------------------")
-print("|                                                |")
-print("|    07Menu                                      |")
-print("|    Name : Alicia Rodrigues                     |")
-print("|    Version : 01                                |")
-print("|                                                |")
-print(" ------------------------------------------------")
+def main_menu():
+    print(" ------------------------------------------------")
+    print("|                                                |")
+    print("|    07Menu                                      |")
+    print("|    Name : Alicia Rodrigues                     |")
+    print("|    Version : 01                                |")
+    print("|                                                |")
+    print(" ------------------------------------------------")
+    print("")
+    menu_list()
+    enter_op = input("Enter an option ")
+
+    while enter_op != "x":
+        if enter_op == "1":
+            start()
+            hello_world()
+            end()
+            # ent_cont()
+            clearConsole()
+            main_menu()
+        elif enter_op == "2":
+            start()
+            goodbye_world()
+            end()
+            # ent_cont()
+            clearConsole()
+            main_menu()          
+        elif enter_op == "3":
+            start()
+            goodbye_person()
+            end()
+            # ent_cont()
+            clearConsole()
+            main_menu() 
+        elif enter_op == "4":
+            start()
+            goodbye_teacher()
+            end()
+            # ent_cont()
+            clearConsole()
+            main_menu() 
+        elif enter_op == "5":
+            start()
+            for_loop()
+            end()
+            # ent_cont()
+            clearConsole()
+            main_menu() 
+        elif enter_op == "6":
+            start()
+            while_loop()
+            end()
+            # ent_cont()
+            clearConsole()
+            main_menu() 
+        else:
+            start()
+            print("invalid option")
+            end()
+            # ent_cont()
+            clearConsole()
+            main_menu()
+    start()
+    end()
+    # ent_cont()
+    quit()
 
 def menu_list():
-    print("""
-1. Hello World
-2. Goodbye World
-3. Goodbye Person
-4. Good Teacher
-5. forLoop
-6. whileLoop
-7. string Loop
-8. Convert to ascii
-9. Encode a string
-x. To Exit""")
+    print("""1. Hello World
+    2. Goodbye World
+    3. Goodbye Person
+    4. Good Teacher
+    5. forLoop
+    6. whileLoop
+    7. string Loop
+    8. Convert to ascii
+    9. Encode a string
+    x. To Exit""")
 
 def start():
     print("")
@@ -33,9 +91,10 @@ def end():
     print("")
     print("")
     print("")
-
-def ent_cont():
     input("Press Enter to continue")
+
+# def ent_cont():
+#     input("Press Enter to continue")
 
 def hello_world():
     print("\nHello World\n")
@@ -74,73 +133,6 @@ def while_loop():
         print("")
         print("")
         print("")
-
-def main_menu():
-    print(" ------------------------------------------------")
-    print("|                                                |")
-    print("|    07Menu                                      |")
-    print("|    Name : Alicia Rodrigues                     |")
-    print("|    Version : 01                                |")
-    print("|                                                |")
-    print(" ------------------------------------------------")
-    print("")
-    menu_list()
-    enter_op = input("Enter an option ")
-
-    while enter_op != "x":
-        if enter_op == "1":
-            start()
-            hello_world()
-            end()
-            ent_cont()
-            clearConsole()
-            main_menu()
-        elif enter_op == "2":
-            start()
-            goodbye_world()
-            end()
-            ent_cont()
-            clearConsole()
-            main_menu()          
-        elif enter_op == "3":
-            start()
-            goodbye_person()
-            end()
-            ent_cont()
-            clearConsole()
-            main_menu() 
-        elif enter_op == "4":
-            start()
-            goodbye_teacher()
-            end()
-            ent_cont()
-            clearConsole()
-            main_menu() 
-        elif enter_op == "5":
-            start()
-            for_loop()
-            end()
-            ent_cont()
-            clearConsole()
-            main_menu() 
-        elif enter_op == "6":
-            start()
-            while_loop()
-            end()
-            ent_cont()
-            clearConsole()
-            main_menu() 
-        else:
-            start()
-            print("invalid option")
-            end()
-            ent_cont()
-            clearConsole()
-            main_menu()
-    start()
-    end()
-    ent_cont()
-    quit()
 
 clearConsole()
 main_menu()
