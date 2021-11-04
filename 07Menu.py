@@ -8,23 +8,28 @@ print(" ------------------------------------------------")
 
 def menu():
     print("""
-    1. Hello World
-    2. Goodbye World
-    3. Goodbye Person
-    4. Good Teacher
-    5. forLoop
-    6. whileLoop
-    7. string Loop
-    8. Convert to ascii
-    9. Encode a string
-    x. To Exit""")
-    enter_op = input("Enter an option ")
+1. Hello World
+2. Goodbye World
+3. Goodbye Person
+4. Good Teacher
+5. forLoop
+6. whileLoop
+7. string Loop
+8. Convert to ascii
+9. Encode a string
+x. To Exit""")
 
 def start():
+    print("")
     print("----Start of Output ---------------------------")
+    print("")
 
 def end():
+    print("")
     print("----End of Output -----------------------------")
+    print("")
+    print("")
+    print("")
 
 def hello_world():
     print("\nHello World\n")
@@ -65,6 +70,49 @@ def while_loop():
         print("")
 
 menu()
+
+enter_op = input("Enter an option ")
+if enter_op == "1":
+    start()
+    hello_world()
+    end()
+
+if enter_op == "2":
+    start()
+    goodbye_world()
+    end()
+
+if enter_op == "3":
+    start()
+    goodbye_person()
+    end()
+
+if enter_op == "4":
+    start()
+    goodbye_teacher()
+    end()
+
+if enter_op == "5":
+    start()
+    for_loop()
+    end()
+
+if enter_op == "6":
+    start()
+    while_loop()
+    end()
+
+if enter_op == "x":
+    start()
+    end()
+
+else:
+    start()
+    print("invalid option")
+    end()
+
+input("Press Enter to continue")
+
 
 
 
