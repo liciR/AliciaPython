@@ -141,9 +141,9 @@ def string_loop():
 
 def convertto_ascii():
     string = input("What is your string? ")
-    for a in string:
-        x = ord(a)
-        print(x)  
+    for y in string:
+        z = ord(y)
+        print(y, "=", z)  
 
 clearConsole()
 main_menu()
